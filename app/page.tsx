@@ -5,7 +5,6 @@ import { ThemesSection } from "@/components/themes-section"
 import { HackathonSection } from "@/components/hackathon-section"
 import { ScheduleSection } from "@/components/schedule-section"
 import { VenueSection } from "@/components/venue-section"
-import { TeamSection } from "@/components/team-section"
 import { SiteFooter } from "@/components/site-footer"
 
 export default function Page() {
@@ -18,7 +17,6 @@ export default function Page() {
       <HackathonSection />
       <ScheduleSection />
       <VenueSection />
-      <TeamSection />
       <SiteFooter />
     </main>
   )
