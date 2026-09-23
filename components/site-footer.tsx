@@ -7,9 +7,6 @@ export function SiteFooter() {
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-sm">
             <div className="flex items-center gap-2">
-              <span className="grid h-10 w-10 place-items-center rounded-md bg-white text-sm font-bold text-primary">
-                JAI
-              </span>
               <span className="text-lg font-bold">JAI 2026</span>
             </div>
             <p className="mt-3 text-sm text-primary-foreground/80">
@@ -34,7 +31,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 border-t border-primary-foreground/20 pt-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary-foreground/70">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary-foreground/70">
             People &nbsp;|&nbsp; Ideas &nbsp;|&nbsp; Perspective &nbsp;|&nbsp; A Better Tomorrow
           </p>
           <p className="mt-3 text-xs text-primary-foreground/70">
