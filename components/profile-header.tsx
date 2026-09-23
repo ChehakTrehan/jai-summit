@@ -80,45 +80,40 @@ export function ProfileHeader() {
       {/* LinkedIn-style profile card */}
       <div className="mx-auto max-w-6xl px-4 pb-6 pt-4 sm:pt-6">
         <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-          {/* Banner */}
-          <div className="relative h-40 w-full sm:h-56 md:h-64">
+          {/* Banner - Jaypee campus photo */}
+          <div className="relative h-40 w-full sm:h-56 md:h-72">
             <Image
-              src="/images/summit-banner.png"
-              alt="Abstract blue agentic AI network banner"
+              src="/images/campus.png"
+              alt="Jaypee Institute of Information Technology campus"
               fill
               priority
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-primary/10 to-transparent" />
           </div>
 
           {/* Profile row */}
           <div className="px-5 pb-6 sm:px-8">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-              {/* Jaypee campus profile photo, overlapping the banner */}
-              <div className="-mt-14 flex items-end gap-4 sm:-mt-16">
-                <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border-4 border-card bg-white shadow-md sm:h-32 sm:w-32">
+              {/* Agentic AI logo as profile picture, overlapping the banner */}
+              <div className="-mt-16 flex items-end gap-4 sm:-mt-20">
+                <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border-4 border-card bg-white shadow-md sm:h-36 sm:w-36">
                   <Image
-                    src="/images/campus.png"
-                    alt="Jaypee Institute of Information Technology campus"
+                    src="/images/agentic-logo.png"
+                    alt="Jaypee Agentic AI International Summit logo"
                     fill
-                    className="object-cover"
+                    className="object-contain p-2"
                   />
                 </div>
               </div>
 
-              {/* Agentic AI logo badge */}
+              {/* Campus identity badge */}
               <div className="flex items-center gap-3 sm:pb-2">
-                <div className="relative h-12 w-12 overflow-hidden rounded-lg border border-border bg-white p-1">
-                  <Image
-                    src="/images/agentic-logo.png"
-                    alt="Agentic AI Summit logo"
-                    fill
-                    className="object-contain p-1"
-                  />
-                </div>
+                <span className="grid h-9 w-9 place-items-center rounded-md bg-primary text-sm font-bold text-primary-foreground">
+                  JAI
+                </span>
                 <span className="text-xs font-semibold uppercase tracking-widest text-primary">
-                  Agentic AI Summit
+                  JIIT · Noida
                 </span>
               </div>
             </div>
