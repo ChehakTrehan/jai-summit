@@ -11,15 +11,16 @@ export function ProfileHeader() {
   return (
     <header id="home" className="relative">
       {/* Sticky top navigation (LinkedIn-style top bar) */}
-      <nav className="sticky top-0 z-50 border-b border-border bg-white/85 backdrop-blur-md">
+      <nav className="sticky top-0 z-50 border-b border-border bg-white/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
-          <a href="#home" className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-md bg-primary text-sm font-bold text-primary-foreground">
-              JAI
-            </span>
-            <span className="hidden text-sm font-semibold text-foreground sm:inline">
-              JAI 2026
-            </span>
+          <a href="#home" className="flex items-center">
+            <Image
+              src="/jiit-logo.png"
+              alt="Jaypee Institute of Information Technology logo"
+              width={48}
+              height={48}
+              className="h-12 w-12 rounded-md object-contain"
+            />
           </a>
 
           <ul className="hidden items-center gap-1 lg:flex">
@@ -110,9 +111,6 @@ export function ProfileHeader() {
 
               {/* Campus identity badge */}
               <div className="flex items-center gap-3 sm:pb-2">
-                <span className="grid h-9 w-9 place-items-center rounded-md bg-primary text-sm font-bold text-primary-foreground">
-                  JAI
-                </span>
                 <span className="text-xs font-semibold uppercase tracking-widest text-primary">
                   JIIT · Noida
                 </span>
@@ -121,7 +119,7 @@ export function ProfileHeader() {
 
             {/* Name / headline block */}
             <div className="mt-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary">
                 Agentic AI Summit
               </p>
               <h1 className="mt-2 text-3xl font-extrabold leading-tight text-foreground sm:text-4xl md:text-5xl">
