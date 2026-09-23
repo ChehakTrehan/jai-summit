@@ -38,6 +38,7 @@ export function ProfileHeader() {
           <div className="flex items-center gap-2">
             <Button
               render={<a href="#hackathon" />}
+              nativeButton={false}
               size="sm"
               className="hidden sm:inline-flex"
             >
@@ -138,10 +139,10 @@ export function ProfileHeader() {
               </p>
 
               <div className="mt-5 flex flex-wrap gap-3">
-                <Button render={<a href="#hackathon" />} size="lg">
+                <Button render={<a href="#hackathon" />} nativeButton={false} size="lg">
                   Register for Summit
                 </Button>
-                <Button render={<a href="#about" />} size="lg" variant="outline">
+                <Button render={<a href="#about" />} nativeButton={false} size="lg" variant="outline">
                   Learn More
                 </Button>
               </div>
