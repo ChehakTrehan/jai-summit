@@ -18,9 +18,9 @@ export function ProfileHeader() {
             <Image
               src="/jiit-logo.png"
               alt="Jaypee Institute of Information Technology logo"
-              width={48}
-              height={48}
-              className="h-12 w-12 rounded-md object-contain"
+              width={56}
+              height={56}
+              className="h-14 w-14 rounded-md object-contain"
             />
           </a>
 
@@ -101,14 +101,13 @@ export function ProfileHeader() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               {/* Agentic AI logo as profile picture, overlapping the banner */}
               <div className="-mt-16 flex items-end gap-4 sm:-mt-20">
-                <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border-4 border-card bg-card shadow-md sm:h-36 sm:w-36">
-                  <Image
-                    src="/images/agentic-logo.png"
-                    alt="Jaypee Agentic AI International Summit logo"
-                    fill
-                    className="object-contain p-2"
-                  />
-                </div>
+                <Image
+                  src="/images/agentic-logo.png"
+                  alt="Jaypee Agentic AI International Summit logo"
+                  width={144}
+                  height={144}
+                  className="relative z-10 h-28 w-28 shrink-0 rounded-xl object-contain sm:h-36 sm:w-36"
+                />
               </div>
 
               {/* Campus identity badge */}
