@@ -10,8 +10,8 @@ export const NAV_LINKS = [
 ]
 
 export const STATS = [
-  { value: "2", label: "Themes" },
-  { value: "3", label: "Events" },
+  { value: "4", label: "Themes" },
+  { value: "7", label: "Events" },
   { value: "1.5M", label: "Prize Pool (INR)" },
   { value: "10M", label: "Pre-Seed (INR)" },
 ]

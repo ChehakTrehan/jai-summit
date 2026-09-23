@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useState } from "react"
 import { NAV_LINKS, STATS } from "@/lib/summit-data"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function ProfileHeader() {
   const [open, setOpen] = useState(false)
@@ -11,7 +12,7 @@ export function ProfileHeader() {
   return (
     <header id="home" className="relative">
       {/* Sticky top navigation (LinkedIn-style top bar) */}
-      <nav className="sticky top-0 z-50 border-b border-border bg-white/95 backdrop-blur-md">
+      <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
           <a href="#home" className="flex items-center">
             <Image
@@ -37,6 +38,7 @@ export function ProfileHeader() {
           </ul>
 
           <div className="flex items-center gap-2">
+            <ThemeToggle />
             <Button
               render={<a href="#hackathon" />}
               nativeButton={false}
@@ -99,7 +101,7 @@ export function ProfileHeader() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               {/* Agentic AI logo as profile picture, overlapping the banner */}
               <div className="-mt-16 flex items-end gap-4 sm:-mt-20">
-                <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border-4 border-card bg-white shadow-md sm:h-36 sm:w-36">
+                <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border-4 border-card bg-card shadow-md sm:h-36 sm:w-36">
                   <Image
                     src="/images/agentic-logo.png"
                     alt="Jaypee Agentic AI International Summit logo"
